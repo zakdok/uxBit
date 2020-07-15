@@ -1,0 +1,46 @@
+.research-block-area{
+    padding: 115px 0 0;
+}
+.research-header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d9d9d9;
+    z-index: 9999;
+}
+.research-header .title-wrap{
+    position: relative;
+    margin: 0 0 5px;
+}
+.research-header .title-wrap .title{
+    color: #1b1b1b;
+    font-size: 20px;
+    font-weight: 700;
+}
+.research-header .title-wrap .button-wrap{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.research-header .title-wrap .button-wrap button{
+    display: block;
+    width: 20px;
+}
+.research-header .title-wrap .button-wrap button img{}
+.research-collection-area.active{
+    transition: .5s;
+}
+.research-collection-area .swiper-container{}
+.research-collection-area .swiper-wrapper{}
+.research-collection-area .slick-slide{
+    width: auto;
+    margin-right: 10px;
+}
+.research-collection-area .slick-slide .thumbnail{}
+.research-collection-area .slick-slide .thumbnail img{
+    height: 59px;
+}
