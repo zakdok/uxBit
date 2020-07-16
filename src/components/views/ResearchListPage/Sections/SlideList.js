@@ -15,7 +15,6 @@ class SlideList extends React.Component {
             var gridElements = "";
             var gridLength = 5;
             var colLength = 23;
-            var idx;
 
             if (researchContentWrapper.childElementCount === 0) {
                 for (var i = 1; i <= gridLength; i++) {
@@ -39,7 +38,7 @@ class SlideList extends React.Component {
                     <li class="list-con">
                         <div class="list-inner">
                             <button class="thumbnail">
-                                <img src="assets/images/example${randomImageNumber}.jpg" alt="thumbnail">
+                                <img src="/images/${process.env.PUBLIC_URL + "/images/example"+ randomImageNumber +".jpg"}" alt="thumbnail">
                             </button>
                         </div>
                     </li>`;
@@ -88,7 +87,6 @@ class SlideList extends React.Component {
                     var thumbnailImage = thumbnail.querySelector('img');
                     var thumbnailWidth = thumbnailImage.width;
                     var thumbnailHeight = thumbnailImage.height;
-                    var thumbnailSrc = thumbnailImage.src;
                     var collectionSlideWrapper = document.querySelector('.research-collection-area');
                     var collectionThumbnailHieght = collectionSlideWrapper.clientHeight;
                     var thumbnailRatio = collectionThumbnailHieght / thumbnailHeight;
@@ -231,23 +229,22 @@ class SlideList extends React.Component {
         super(props);
         this.state = {
           slides: [
-            "assets/images/example22.jpg",
-            "assets/images/example2.jpg",
-            "assets/images/example12.jpg",
-            "assets/images/example11.jpg",
-            "assets/images/example14.jpg",
-            "assets/images/example3.jpg",
-            "assets/images/example1.jpg",
-            "assets/images/example4.jpg",
-            "assets/images/example6.jpg",
-            "assets/images/example7.jpg",
-            "assets/images/example9.jpg",
+            "/images/example22.jpg",
+            "images/example2.jpg",
+            "images/example12.jpg",
+            "images/example11.jpg",
+            "images/example14.jpg",
+            "images/example3.jpg",
+            "images/example1.jpg",
+            "images/example4.jpg",
+            "images/example6.jpg",
+            "images/example7.jpg",
+            "images/example9.jpg",
           ],
         };
         this.click = this.click.bind(this);
     }
     click(thumbnailSrc) {
-        const { slides } = this.state;
         const slidesArray = this.state.slides;
         const $this = this;
         slidesArray.unshift(thumbnailSrc);
@@ -273,7 +270,7 @@ class SlideList extends React.Component {
                     <h3 className="title">Title area</h3>
                     <div className="button-wrap">
                         <button id="moodBoardOpenBtn">
-                            <img src="assets/images/icon.png" alt="open mood board" />
+                            <img src="/images/icon.png" alt="open mood board" />
                         </button>
                     </div>
                 </div>
