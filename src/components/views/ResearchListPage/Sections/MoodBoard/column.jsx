@@ -6,7 +6,7 @@ import Task from './task';
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    width: 33.33%;
+    width: 50%;
     margin: 8px;
     border: 1px solid lightgrey;
     border-radius: 2px;
@@ -19,7 +19,7 @@ const TaskList = styled.div`
     padding: 8px;
     transition: background-color 0.2s ease;
     background-color: ${(props) => 
-        props.isDraggingOver ? "lightgrey" : "inherit"};
+        props.isDraggingOver ? "lightgrey" : "white"};
     flex-grow: 1;
     min-height: 100px;
 `;

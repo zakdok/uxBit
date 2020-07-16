@@ -38,7 +38,7 @@ class SlideList extends React.Component {
                     <li class="list-con">
                         <div class="list-inner">
                             <button class="thumbnail">
-                                <img src="/images/${process.env.PUBLIC_URL + "/images/example"+ randomImageNumber +".jpg"}" alt="thumbnail">
+                                <img src="${process.env.PUBLIC_URL + "/images/example"+ randomImageNumber +".jpg"}" alt="thumbnail">
                             </button>
                         </div>
                     </li>`;
@@ -227,19 +227,24 @@ class SlideList extends React.Component {
     }
     constructor(props) {
         super(props);
+        const imagePath = process.env.PUBLIC_URL;
         this.state = {
           slides: [
-            "/images/example22.jpg",
-            "images/example2.jpg",
-            "images/example12.jpg",
-            "images/example11.jpg",
-            "images/example14.jpg",
-            "images/example3.jpg",
-            "images/example1.jpg",
-            "images/example4.jpg",
-            "images/example6.jpg",
-            "images/example7.jpg",
-            "images/example9.jpg",
+            imagePath + "/images/example22.jpg",
+            imagePath + "/images/example2.jpg",
+            imagePath + "/images/example13.jpg",
+            imagePath + "/images/example1.jpg",
+            imagePath + "/images/example2.jpg",
+            imagePath + "/images/example3.jpg",
+            imagePath + "/images/example6.jpg",
+            imagePath + "/images/example7.jpg",
+            imagePath + "/images/example8.jpg",
+            imagePath + "/images/example9.jpg",
+            imagePath + "/images/example12.jpg",
+            imagePath + "/images/example2.jpg",
+            imagePath + "/images/example14.jpg",
+            imagePath + "/images/example15.jpg",
+            imagePath + "/images/example12.jpg",
           ],
         };
         this.click = this.click.bind(this);
@@ -270,7 +275,7 @@ class SlideList extends React.Component {
                     <h3 className="title">Title area</h3>
                     <div className="button-wrap">
                         <button id="moodBoardOpenBtn">
-                            <img src="/images/icon.png" alt="open mood board" />
+                            <img src="/uxBit/images/icon.png" alt="open mood board" />
                         </button>
                     </div>
                 </div>

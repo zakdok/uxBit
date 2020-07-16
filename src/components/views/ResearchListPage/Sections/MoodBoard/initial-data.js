@@ -38,15 +38,22 @@ const initialData = {
         "task-10",
         "task-11",
         "task-12",
+        "task-13",
+        "task-14",
+        "task-15",
+        "task-16",
+        "task-17",
       ],
     },
-    "column-3": {
-      id: "column-3",
-      title: "Column3",
-      taskIds: ["task-13", "task-14", "task-15", "task-16", "task-17"],
-    },
+    // "column-3": {
+    //   id: "column-3",
+    //   title: "Column3",
+    //   taskIds: ["task-13", "task-14", "task-15", "task-16", "task-17"],
+    // },
   },
-  columnOrder: ["column-1", "column-2", "column-3"],
+  columnOrder: ["column-1", "column-2", 
+  // "column-3"
+  ],
 };
 
 export default initialData;
