@@ -1,0 +1,12 @@
+.matrix-wrapper{
+  width: 100vw;
+  height: 90vh;
+  background-color: #272730;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}

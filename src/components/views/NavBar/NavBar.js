@@ -11,6 +11,9 @@ function NavBar() {
                 <li>
                     <Link to="/ResearchList">ResearchList</Link>
                 </li>
+                <li>
+                    <Link to="/Matrix">Matrix</Link>
+                </li>
             </ul>
         </nav>
     )
